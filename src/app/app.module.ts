@@ -4,13 +4,14 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import {PostCreateComponent} from './Posts/Post-Create/post-create.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
