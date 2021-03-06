@@ -9,13 +9,16 @@ import {PostCreateComponent} from './Posts/Post-Create/post-create.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { HeaderComponent } from './header/header.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule,FormsModule, BrowserAnimationsModule,MatInputModule,MatCardModule,MatButtonModule
+    BrowserModule,FormsModule, BrowserAnimationsModule,MatInputModule,MatCardModule,MatButtonModule,MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
