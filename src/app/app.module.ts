@@ -11,14 +11,19 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { HeaderComponent } from './header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { PostListComponent } from './Posts/Post-List/post-list.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostListComponent
   ],
   imports: [
-    BrowserModule,FormsModule, BrowserAnimationsModule,MatInputModule,MatCardModule,MatButtonModule,MatToolbarModule
+    BrowserModule, FormsModule, BrowserAnimationsModule, MatInputModule,
+    MatCardModule, MatButtonModule, MatToolbarModule, MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
