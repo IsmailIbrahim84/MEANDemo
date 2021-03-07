@@ -1,5 +1,4 @@
-import { Component, Output } from "@angular/core";
-import * as EventEmitter from "node:events";
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-post-create',
