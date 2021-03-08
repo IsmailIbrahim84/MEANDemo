@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'MEANStackFirstDemo';
   storedPosts:post[] = [];
   onPostAdded(post) {
+
     this.storedPosts.push(post);
   }
 }
