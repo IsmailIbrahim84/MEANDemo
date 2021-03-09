@@ -29,6 +29,7 @@ constructor (public postService: PostService){}
   // };
   //  this.postCreated.emit(post);
 this.postService.addPost(form.value.title,form.value.content);
+form.reset();
   }
 
 }
