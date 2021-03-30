@@ -13,9 +13,9 @@ export class PostCreateComponent {
   enteredTitle = '';
   // @Output() postCreated = new EventEmitter<post>();
 
-constructor (public postService: PostService){}
+constructor(public postService: PostService){}
 
-  onAddPost(form:NgForm)
+  onAddPost(form: NgForm)
   {
     if (form.invalid)
     {
@@ -28,8 +28,8 @@ constructor (public postService: PostService){}
   //   content: form.value.content
   // };
   //  this.postCreated.emit(post);
-this.postService.addPost(form.value.title,form.value.content);
-form.reset();
+    this.postService.addPost(form.value.title, form.value.content);
+    form.reset();
   }
 
 }

@@ -22,13 +22,13 @@ export class PostListComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.post = this.postService.getPosts();
+    this.postService.getPosts();
     this.postSubscription = this.postService.getUpdatedListener()
-    .subscribe((posts: post[])=>{this.post = posts});
+    .subscribe((posts: post[]) =>{ this.post = posts; });
   }
 
   ngOnDestory(){
-    this.postSubscription.unsubscribe(); //To avoid memory leak.
+    this.postSubscription.unsubscribe(); // To avoid memory leak.
   }
 
 }
